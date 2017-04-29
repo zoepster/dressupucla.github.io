@@ -1856,7 +1856,8 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #536895;
+		color: #0ea53c;
+		font-family: 'Oswald', sans-serif;
 	}
 
 	blockquote {
