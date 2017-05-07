@@ -7156,6 +7156,56 @@
 	#wrapper > .wrapper.style2.invert > .inner {
 		background-color: #000000;
 	}
+	
+/* Wrapper (style3) */
+
+	.wrapper.style3 > .inner {
+		padding: 1rem 0rem 0rem 0rem ;
+		margin: 0 auto;
+		max-width: 100%;
+		width: 64rem;
+	}
+
+		.wrapper.style1 > .inner.medium {
+			width: 48rem;
+		}
+
+		.wrapper.style1 > .inner.small {
+			width: 32rem;
+		}
+
+	@media screen and (max-width: 1680px) {
+
+		.wrapper.style1 > .inner {
+			padding: 5rem 2.5rem 3rem 2.5rem ;
+		}
+
+	}
+
+	@media screen and (max-width: 1280px) {
+
+		.wrapper.style1 > .inner {
+			padding: 4rem 4rem 2rem 4rem ;
+		}
+
+	}
+
+	@media screen and (max-width: 980px) {
+
+		.wrapper.style1 > .inner {
+			padding: 4.5rem 3rem 2.5rem 3rem ;
+		}
+
+	}
+
+	@media screen and (max-width: 736px) {
+
+		.wrapper.style1 > .inner {
+			padding: 3rem 2rem 1rem 2rem ;
+		}
+
+	}
+	
 
 /* Items (transitions) */
 
