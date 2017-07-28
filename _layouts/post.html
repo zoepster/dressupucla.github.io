@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div id="wrapper" class="divided">
+    <section class="spotlight style2 orient-left content-orient-left">
+        <div class="content">
+            {% include navbar.html %}
+            <h2>{{ page.title }}</h2>
+            <h3>{{ page.author }}</h3>
+        </div>
+    </section>
+
+    <section class="spotlight style2 orient-left content-orient-left">
+        <div class="content">
+            <p>{{ page.content }}</p>
+        </div>
+    </section>
+
+    <div class="footerbox">
+        {% include footer.html %}
+    </div>
+</div>

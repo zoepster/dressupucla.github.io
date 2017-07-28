@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "Call for Participation"
+date:   2017-07-20 15:20:11 -0700
+author: Dawn Childress
+categories: posts
+---
+<p>Submission deadline: Applications received by May 26 will be notified by June 1. Applications will 
+    be accepted through June 15 on a rolling basis if space is available. Please submit your 
+    application below. Applications should be submitted as one file with 3 sections, including a 
+    personal summary, CV, and project description. The personal summary should include your name, 
+    department, degree type, expected degree completion date, address, email, and project title. The 
+    project description should be no more than 3 pages and include:</p>
+
+<ul>
+    <li>Overall research question and brief explanation of its relevance</li>
+    <li>Scholarly goals and objectives for the summer project</li>
+    <li>Materials/sources that will form the basis of the project</li>
+    <li>If digitization is required, describe the source materials, desired output format, 
+        digitization process</li>
+    <li>Project deliverables (conference paper, journal article, website, etc. - Note: dissertations 
+        should not be submitted as deliverables)</li>
+    <li>Anticipated digital scholarship tools and methods</li>
+    <li>Brief evaluation of applicable technical skills, including areas where more support is needed</li>
+    <li>Schedule/timeline for your project</li>
+    <li>Project budget with funding needs and other sources of support if available</li>
+</ul>
+
+<p style="color: red;">The deadline for applications has passed. Please apply next year!</p>

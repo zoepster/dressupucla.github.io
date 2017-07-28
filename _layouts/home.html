@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<div id="wrapper" class="divided">
+  <section class="banner style1 orient-left content-align-left image-position-center fullscreen onload-image-fade-in onload-content-fade-right">
+    <div class="content">
+      {% include navbar.html %}
+      <h1>Digital Research<br/ > Start-Up Partnerships</h1>
+      <p class="major">UCLA Library's digital projects incubator for graduate students and librarians.</p>
+      <!-- <ul class="actions vertical">
+        <li><a href="{{ site.baseurl }}/about" class="button big wide smooth-scroll-middle">About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ site.baseurl }}/apply" class="button big wide smooth-scroll-middle">Participate!</a></li>
+      </ul> -->
+      <h3>Latest Posts</h3>
+      <ul>
+        {% for post in site.posts limit:3 %}
+        <li><h4><a href="{{ post.url }}">{{ post.title }}</a></h4></li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="image">
+      <img src="images/code.jpg" alt="" />
+    </div>
+  </section>
+
+  {% include footer.html %}
+
+</div>
