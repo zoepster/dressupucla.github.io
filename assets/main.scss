@@ -1,0 +1,44 @@
+---
+---
+
+/* Overwrite Minima */
+
+	.wrapper {
+		max-width: 100%;
+		margin-right: auto;
+		margin-left: auto;
+		padding-right: 30px;
+		padding-left: 30px; }
+
+	@media screen and (max-width: 800px) {
+		.wrapper {
+		max-width: 100%;
+		padding-right: 15px;
+		padding-left: 15px; } }
+	  
+    .site-nav {
+        float: left;
+        margin-right: 15px;
+    }
+
+/* Header */
+
+	#headerbox {
+		margin-bottom: 2rem;
+	}
+
+/* Nav */
+
+	ul {
+		margin-left: 0;
+	}
+
+		ul li {
+			padding-left: 0;
+		}
+
+/* Blurb */
+
+    .blurb {
+        font-size: 14px;
+    }
