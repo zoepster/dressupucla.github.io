@@ -4876,11 +4876,8 @@
 		@media screen and (max-width: 1680px) {
 
 			.spotlight.style2 {
-<<<<<<< HEAD
-				padding: 5rem 5rem 3rem 5rem ;
-=======
 				padding: 2rem 5rem 2rem 5rem ;
->>>>>>> temp2
+
 			}
 
 		}
@@ -7157,7 +7154,7 @@
 	#wrapper > .wrapper.style2.invert > .inner {
 		background-color: #000000;
 	}
-	
+
 /* Wrapper (style3) */
 
 	.wrapper.style3 > .inner {
@@ -7206,11 +7203,6 @@
 		}
 
 	}
-<<<<<<< HEAD
-	
-=======
-
->>>>>>> temp2
 
 /* Items (transitions) */
 
