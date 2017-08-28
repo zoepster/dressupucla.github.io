@@ -44,12 +44,16 @@ collections:
   people:
     title: People
     output: true
-    permalink: /people/:path
+    permalink: /people/:name
+  sessions:
+    title: Sessions
+    output: true
+    permalink: /participants/:name
 
-defaults:
-  - scope:
-      path: ''
-      type: people
-    values:
-      layout: people
+# defaults:
+#   - scope:
+#       path: ''
+#       type: people
+#     values:
+#       layout: people
 

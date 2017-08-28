@@ -6,8 +6,12 @@ layout: default
     <section class="spotlight style2 orient-left content-orient-left">
         <div class="content">
             {% include navbar.html %}
-            <h2>{{ page.title }}</h2>
-            <h3>{{ page.author }}</h3>
+            <h2>{{ page.display_name }}</h2>
+            {% for person in site.people %}
+            {% if page.author == person.display_name %}
+            <a href="{{ person.url }}" style="text-decoration: none;"><h3>{{ page.author }}</h3></a>
+            {% endif %}
+            {% endfor %}
         </div>
     </section>
 
