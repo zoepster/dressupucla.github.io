@@ -4876,7 +4876,11 @@
 		@media screen and (max-width: 1680px) {
 
 			.spotlight.style2 {
+<<<<<<< HEAD
 				padding: 5rem 5rem 3rem 5rem ;
+=======
+				padding: 2rem 5rem 2rem 5rem ;
+>>>>>>> temp2
 			}
 
 		}
@@ -7202,7 +7206,11 @@
 		}
 
 	}
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> temp2
 
 /* Items (transitions) */
 

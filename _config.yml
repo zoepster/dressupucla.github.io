@@ -14,13 +14,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: DResSUP | UCLA Library
-email: bensonjaminhan@gmail.com
+email: zoe@library.ucla.edu
 description: > # this means to ignore newlines until "baseurl:"
   UCLA Library's digital projects incubator for graduate students and librarians.
-baseurl: "/dressupucla.github.io" # the subpath of your site, e.g. /blog
+baseurl: "/dressup" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
-github_username:  bensonhan
+github_username:  dressupucla
 
 # Build settings
 markdown: kramdown
@@ -44,12 +44,16 @@ collections:
   people:
     title: People
     output: true
-    permalink: /people/:path
+    permalink: /people/:name
+  sessions:
+    title: Sessions
+    output: true
+    permalink: /participants/:name
 
-defaults:
-  - scope:
-      path: ''
-      type: people
-    values:
-      layout: people
+# defaults:
+#   - scope:
+#       path: ''
+#       type: people
+#     values:
+#       layout: people
 

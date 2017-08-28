@@ -2,16 +2,25 @@
 layout: default
 ---
 
+{% if page.session %}
+    {% assign class = page.session %}
+{% else %}
+    {% assign class = "summer-17" %}
+{% endif %}
+
 <div id="wrapper" class="divided">
     <section class="spotlight style2 orient-left content-orient-left">
         <div class="content">
             {% include navbar.html %}
             <h2>Participants</h2>
+            {% for class in site.sessions %}
+            <a href="{{ class.url }}" class="button">{{ class.title }}</a>
+            {% endfor %}
         </div>
     </section>
 
     {% for person in site.people %}
-    {% if person.role == "participant" %}
+    {% if person.role == "participant" and person.session == class %}
     <section class="spotlight style2 orient-left content-orient-left">
         <div class="content ">
             <div class="row">
@@ -23,7 +32,7 @@ layout: default
                         <img src="{{ site.baseurl }}/images/colors.jpg">
                         {% endif %}
                     </div>
-                    <h3 style="text-align: center; padding-top: 15px;"><a href="{{ person.url }}">{{ person.title }}</a></h3>
+                    <h3 style="text-align: center; padding-top: 15px;"><a href="{{ person.url }}">{{ person.display_name }}</a></h3>
                     <ul class="icons" style="text-align: center;">
                         {% if person.twitter %}
                         <li><a href="https://twitter.com/{{ person.twitter }}" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
@@ -38,20 +47,14 @@ layout: default
                 </div>
 
                 <div class="col-8">
-                    {% for post in site.posts limit:1 %}
-                    {% if post.author == person.title %}
-                    <h3>Latest Posts</h3>
-                    {% else %}
-                    <h4>Stay tuned for posts by {{ person.title }}!</h4>
-                    {% endif %}
-                    {% endfor %}
-                    <ul>
-                        {% for post in site.posts limit:3 %}
-                        {% if post.author == person.title %}
-                        <li><h4><a href="{{ post.url }}">{{ post.title }}</a></h4></li>
-                        {% endif %}
-                        {% endfor %}
-                    </ul>
+                        <h3>Latest Posts</h3>
+                        <ul>
+                            {% for post in site.posts %}
+                                {% if post.author == person.display_name %}
+                                <li><h4><a href="{{ post.url }}">{{ post.title }}</a></h4></li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
 
                     <!-- {% if person.blurb %}
                     <p class="blurb">{{ person.blurb }}</p>
