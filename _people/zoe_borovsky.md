@@ -1,7 +1,7 @@
 ---
 layout: people
-display_name: Zoe
-title: Zoe's Page
+display_name: Zoe Borovsky
+title: Librarian for Digital Research and Scholarship
 picture: 
 twitter: @zoepster
 github: 
